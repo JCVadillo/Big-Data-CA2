@@ -1,6 +1,6 @@
 # Big-Data-CA2
 
-## create a Web Based Application (HTML, CSS, Javascript/JQuery) that consumes a FREE public Web-service.
+## Create a Web Based Application (HTML, CSS, Javascript/JQuery) that consumes a FREE public Web-service.
 
 Based on a existing API from Punk brewery API (https://api.punkapi.com/v2/beers) Has been created a simple Web Based App 
 that provides name, tag and description of every Ale on the punk API.
