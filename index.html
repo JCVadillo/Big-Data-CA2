@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Brew Dog Brewery API</title>
+    <link rel = "stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  </head>
+  <body>
+    <section class="hero is-fullheight is-primary is-bold">
+      <div class="container">
+        <div class="title-name">
+          <h1 class="title">
+            It is all about Ales!
+          </h1>
+          <p class="instructions">Porvide the Ale's Id to get more info about or let us pick one for yaaaaa!!!</p>
+          <div class="beerFinder">
+              <input id="beerId" class="input" type="number" min="1" max="325" placeholder="Type Ale's id from 1 to 325" style="margin-top: 2px;">
+              <button id="getBeerId" class="button is-succes">Find the beer</button>
+              <button id="getRandomBeer" class="button is-succes">Beer Picker</button>
+            </div>
+           </div>
+           <nav>
+             <h3 class="">We have 325 Ales in 5 pages, 80 beers per page <br> Except the last one, MAKE THE MATHS</h3>
+               <a href="#" id="page1" class='button is-primary'>1</a>
+               <a href="#" id="page2" class='button is-primary'>2</a>
+               <a href="#" id="page3" class='button is-primary'>3</a>
+               <a href="#" id="page4" class='button is-primary'>4</a>
+               <a href="#" id="page5" class='button is-primary'>5</a>
+           </nav>
+       <h4 class="select-beer">Select one of the Ales for more info</h4>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Id</th>
+              <th>Name</th>
+              <th>Tagline</th>
+              <th>First brewed</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody id="table-body">
+
+          </tbody>
+        </table>
+    </section>
+
+    <!-- Display Beer modal-->
+    <div id="displayBeerModal" class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title"></p>
+          <button class="delete cancel" aria-label="close"></button>
+        </header>
+        <section class="modal-card-body">
+          <div class="field">
+            <h6 class="title is-6" style="margin-top:10px;">Beer's Id.</h6>
+            <h6 id="displayBeerId" class="subtitle is-6"></h6>
+            <h6 class="title is-6" style="margin-top:10px;">Beer's Name.</h6>
+            <h6 id="displayBeerName" class="subtitle is-6"></h6>
+            <h6 class="title is-6" style="margin-top:10px;">Tagline.</h6>
+            <h6 id="displayBeerTagline" class="subtitle is-6"></h6>
+            <h6 class="title is-6" style="margin-top:10px;">First Brewed.</h6>
+            <h6 id="displayFirstBrewed" class="subtitle is-6"></h6>
+            <h6 class="title is-6" style="margin-top:10px;">Description.</h6>
+            <p id="displayBeerDescription" class="subtitle is-6"></p>
+            <h6 class="title is-6" style="margin-top:10px;">ABV.</h6>
+            <p id="displayBeerABV" class="subtitle is-6"></p>
+            <h6 class="title is-6" style="margin-top:10px;">Food Pairing</h6>
+            <p id="displayBeerFoodPairing" class="subtitle is-6"></p>
+            <h6 class="title is-6" style="margin-top:10px;">Brewer's tips</h6>
+            <p id="displayBrewersTips" class="subtitle is-6"></p>
+          </div>
+        </section>
+        <footer class="modal-card-foot">
+          <button class="button cancel">Back</button>
+        </footer>
+      </div>
+    </div>
+
+  </body>
+  <script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+</html>

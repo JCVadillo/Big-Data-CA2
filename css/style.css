@@ -1,0 +1,37 @@
+h1{
+  text-transform: uppercase;
+}
+
+.title-name{
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .instructions{
+    font-size: 1.6rem;
+  }
+
+.beerFinder{
+  display: inline;
+  justify-content: center;
+  max-width: 50%;
+  max-width: inherit;
+}
+#beerId{
+  max-width: 15rem;
+}
+
+#table-body, button, a{
+    cursor: pointer;
+  }
+
+nav{
+  padding: 0.5rem;
+  text-decoration: none;
+}
+
+.select-beer{
+  font-size: 1.2rem;
+  font-style: oblique;
+}
